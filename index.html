@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Data Validation</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Data Validation</h2>
+
+        <form id="input" onsubmit="return validate()">
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" required>
+            <br><br>
+
+            <label for="mobile">Enter Mobile No:</label>
+            <input type="text" id="mobile" required>
+            <br><br>
+
+            <label for="email">Enter email address:</label>
+            <input type="email" id="email" required>
+            <br><br>
+
+            <input type="submit" value="Register">
+            <br>
+
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
